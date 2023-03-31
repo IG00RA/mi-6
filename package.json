@@ -2,20 +2,20 @@
   "name": "mi-6",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Yaroslav-Marinich.github.io/mi-6",
+  "homepage": "https://ig00ra.github.io/mi-6/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /mi-6/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yaroslav-Marinich/mi-6.git"
+    "url": "git+https://github.com/IG00RA/mi-6.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Yaroslav-Marinich/mi-6/issues"
+    "url": "https://github.com/IG00RA/mi-6/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
