@@ -18,6 +18,8 @@
     "url": "https://github.com/IG00RA/mi-6/issues"
   },
   "dependencies": {
+    "firebase": "^9.19.1",
+    "firebaseui": "^6.0.2",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
@@ -26,7 +28,8 @@
     "@parcel/transformer-webmanifest": "^2.6.0",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4"
+    "posthtml-include": "^1.7.4",
+    "process": "^0.11.10"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }

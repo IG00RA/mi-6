@@ -7,6 +7,15 @@
     <!-- title -->
     <title>МІМІНО</title>
 
+    <link
+      +
+      type="text/css"
+      +
+      rel="stylesheet"
+      +
+      href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css"
+      +
+    />
     <!-- slick  -->
     <!-- Add the slick-theme.css if you want default styling -->
     <link
@@ -79,10 +88,11 @@
     <include src="./partials/modal-detalis-room.html"></include>
 
     <!-- modal script -->
-    <script src="./js/mod-table.js"></script>
-    <script src="./js/mod-room.js"></script>
-    <script src="./js/mod-detalis-table.js"></script>
-    <script src="./js/mod-detalis-room.js"></script>
+    <script type="module" src="./js/modals.js"></script>
+    <!-- <script type="module" src="./js/mod-table.js"></script>
+    <script type="module" src="./js/mod-room.js"></script> -->
+    <!-- <script type="module" src="./js/mod-detalis-table.js"></script>
+    <script type="module" src="./js/mod-detalis-room.js"></script> -->
 
     <!-- jquery script -->
     <script
@@ -100,5 +110,7 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./js/slider.js"></script>
+    <script type="module" src="./js/auth.js"></script>
+    <script type="module" src="./js/firebase.js"></script>
   </body>
 </html>
