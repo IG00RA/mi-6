@@ -1,5 +1,4 @@
-
-// КНОПКИ ОСНОВНИХ СЕКЦІЙ 
+// КНОПКИ ОСНОВНИХ СЕКЦІЙ
 
 .btn {
   width: 236px;
@@ -8,9 +7,9 @@
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 16px;
-  line-height: calc(20/16);
+  line-height: calc(20 / 16);
   letter-spacing: 0.02em;
-  
+
   color: $colorAccentYellow;
   background: rgba(0, 0, 0, 0.4);
   border: 2px solid $colorBtnWhite;
@@ -24,10 +23,10 @@
   &--hotel-and-rest {
     background: $colorBtnBlack;
 
-  &:hover,
-  &:focus {
-    border: 2px solid $colorAccentYellow;
-  }
+    &:hover,
+    &:focus {
+      border: 2px solid $colorAccentYellow;
+    }
   }
 }
 
@@ -40,9 +39,9 @@
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 20px;
-  line-height: calc(24/20);
+  line-height: calc(24 / 20);
   text-transform: uppercase;
-  
+
   color: $colorBtnWhite;
   background: $colorBtnBlack;
   border: 1px solid $colorAccentYellow;
@@ -67,23 +66,22 @@
 // КНОПКИ ДЛЯ МОДАЛКИ
 
 .modal__btn {
-  
   display: inline-block;
   width: 100%;
   height: 64px;
   padding: 0;
-  
+
   font-family: 'Montserrat';
   font-weight: 500;
   text-transform: uppercase;
   font-size: 20px;
-  line-height: calc(24/20);
-    
+  line-height: calc(24 / 20);
+
   color: $colorBtnWhite;
   background: $colorBtnBlack;
   border: 1px solid $colorAccentYellow;
   border-radius: 2px;
-    
+
   &:hover,
   &:focus {
     color: $colorBtnBlack;
@@ -92,11 +90,93 @@
 
   @include mobile {
     width: 384px;
-    
   }
 
   @include tablet {
     width: 592px;
     font-size: 24px;
   }
+}
+
+.auth__btn {
+  position: relative;
+  margin-top: 15px;
+  display: inline-block;
+  width: 60%;
+  padding: 0;
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+
+  color: $colorBtnWhite;
+  background: $colorBtnBlack;
+  border: 1px solid $colorAccentYellow;
+  border-radius: 2px;
+
+  &:hover,
+  &:focus {
+    color: $colorBtnBlack;
+    background: $colorAccentYellow;
+  }
+
+  @include mobile {
+    width: 60%;
+  }
+
+  @include tablet {
+    width: 60%;
+    font-size: 24px;
+  }
+}
+
+button.social-signin {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+button.social-signin:hover,
+button.social-signin:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin.facebook {
+  background: #32508e;
+}
+
+button.social-signin.twitter {
+  background: #55acee;
+}
+
+button.social-signin.google {
+  background: #dd4b39;
+}
+
+.or {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  background: #ddd;
+  border-radius: 50%;
+  line-height: 40px;
+  position: absolute;
+  top: 136px;
+  left: 364px;
+  box-shadow: 0 2px 4px #0006;
 }

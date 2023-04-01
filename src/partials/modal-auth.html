@@ -1,0 +1,57 @@
+<div class="backdrop is-hidden" data-modAuth>
+  <div class="modal modal-book-table">
+    <button type="button" class="modal__btn--close" data-modAuth-close>
+      <svg class="modal__icon--close" width="24" height="24">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal__title">Авторизація</p>
+    <form class="modal__form" id="auth_form">
+      <div class="modal__list">
+        <div class="modal__wrap">
+          <div class="modal__field">
+            <label class="modal__label auth__label">через Email і пароль</label>
+            <input
+              class="modal__input"
+              type="text"
+              id="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <input
+              class="modal__input"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+            <button
+              class="auth__btn"
+              type="submit"
+              id="saveData"
+              name="signup_submit"
+            >
+              Sign in
+            </button>
+          </div>
+        </div>
+
+        <div class="modal__wrap">
+          <div class="modal__field">
+            <label class="modal__label auth__label">через соцмережі</label>
+            <button class="social-signin google" id="googleLogin">
+              Log in with Google+
+            </button>
+            <button class="social-signin facebook" id="facebookLogin">
+              Log in with facebook
+            </button>
+            <button class="social-signin twitter" id="twitterLogin">
+              Log in with Twitter
+            </button>
+          </div>
+          <span class="or">або</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

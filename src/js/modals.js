@@ -16,6 +16,10 @@ const refs = {
   openmodDetTableBtn: document.querySelector('[data-modDetTable-open]'),
   closemodDetTableBtn: document.querySelector('[data-modDetTable-close]'),
   modDetTable: document.querySelector('[data-modDetTable]'),
+  //   Authenticator
+  openModAuth: document.querySelector('[data-modAuth-open]'),
+  closeModAuth: document.querySelector('[data-modAuth-close]'),
+  modAuth: document.querySelector('[data-modAuth]'),
 
   body: document.querySelector('body'),
 };
@@ -28,6 +32,8 @@ refs.openmodDetRoomBtn.addEventListener('click', togglemodDetRoom);
 refs.closemodDetRoomBtn.addEventListener('click', togglemodDetRoom);
 refs.openmodDetTableBtn.addEventListener('click', togglemodDetTable);
 refs.closemodDetTableBtn.addEventListener('click', togglemodDetTable);
+refs.openModAuth.addEventListener('click', toggleModAuth);
+refs.closeModAuth.addEventListener('click', toggleModAuth);
 
 function togglemodTable() {
   refs.modTable.classList.toggle('is-hidden');
@@ -43,5 +49,9 @@ function togglemodDetRoom() {
 }
 function togglemodDetTable() {
   refs.modDetTable.classList.toggle('is-hidden');
+  refs.body.classList.toggle('no-scroll');
+}
+function toggleModAuth() {
+  refs.modAuth.classList.toggle('is-hidden');
   refs.body.classList.toggle('no-scroll');
 }
