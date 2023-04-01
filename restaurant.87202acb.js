@@ -1,0 +1,2 @@
+var refs={openmodRoomBtn:document.querySelector("[data-modRoom-open]"),closemodRoomBtn:document.querySelector("[data-modRoom-close]"),modRoom:document.querySelector("[data-modRoom]"),body:document.querySelector("body")};function togglemodRoom(){refs.modRoom.classList.toggle("is-hidden"),refs.body.classList.toggle("no-scroll")}refs.openmodRoomBtn.addEventListener("click",togglemodRoom),refs.closemodRoomBtn.addEventListener("click",togglemodRoom);
+//# sourceMappingURL=restaurant.87202acb.js.map

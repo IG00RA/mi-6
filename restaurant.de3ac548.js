@@ -1,0 +1,2 @@
+var refs={openmodTableBtn:document.querySelector("[data-modTable-open]"),closemodTableBtn:document.querySelector("[data-modTable-close]"),modTable:document.querySelector("[data-modTable]"),body:document.querySelector("body")};function togglemodTable(){refs.modTable.classList.toggle("is-hidden"),refs.body.classList.toggle("no-scroll")}refs.openmodTableBtn.addEventListener("click",togglemodTable),refs.closemodTableBtn.addEventListener("click",togglemodTable);
+//# sourceMappingURL=restaurant.de3ac548.js.map
